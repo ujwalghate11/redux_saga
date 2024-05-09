@@ -5,12 +5,19 @@ import { useDispatch } from 'react-redux';
 
 function App() {
   const dispatch =useDispatch();
-  const product={
+  const product=[{
     name:'i phone',
     category:'mobile',
     price:'100000',
     color:'red'
-  }
+  },
+  {
+    name:'sony',
+    category:'TV',
+    price:'200000',
+    color:'rblue'
+  } 
+  ]
   return (
     <div className="App">
       <button onClick={()=>dispatch(addToCart(product))}>Add To Cart</button>
